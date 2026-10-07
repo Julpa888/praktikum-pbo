@@ -279,6 +279,6 @@ class SistemInventaris:
             else:
                 print("Pilihan tidak valid!")
 
-app = SistemInventaris()
-if app.login_system():
-    app.menu_utama()
+sistem = SistemInventaris()
+if sistem.login_system():
+    sistem.menu_utama()
