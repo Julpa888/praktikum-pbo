@@ -245,6 +245,7 @@ class SistemInventaris:
             print(f"┌─ [ KOLEKSI #{idx} ] ───────────────────────────")
             stok.tas.tampilkanData()
             print(f"│ Ringkasan Stok  : {tampilkan_ringkasan(stok)}")
+            print(f"│ Ringkasan Sertifikat: {tampilkan_ringkasan(stok.tas.sertifikat)}")
             print(f"│ Ringkasan Produk: {stok.tas}")
             self.staf_aktif.inspeksiStok(stok)
             print("└────────────────────────────────────────────\n")
