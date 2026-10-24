@@ -21,7 +21,7 @@ Luxe Archive adalah program berbasis Python untuk mengelola inventaris tas mewah
 
 Gambar berikut menunjukkan hubungan antarkelas yang digunakan dalam program Luxe Archive.
 
-![Class Diagram UML Luxe Archive](praktikum-pbo/post-test/post-test-pbo-3/class_diagram.png)
+![Class Diagram UML Luxe Archive](class_diagram.png)
 
 ## Penjelasan Relasi Antar Kelas
 
