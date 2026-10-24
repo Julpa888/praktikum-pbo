@@ -21,7 +21,7 @@ Luxe Archive adalah program berbasis Python untuk mengelola inventaris tas mewah
 
 Gambar berikut menunjukkan hubungan antarkelas yang digunakan dalam program Luxe Archive.
 
-![Class Diagram UML Luxe Archive](post-test-pbo-3/images/class_diagram.png)
+![Class Diagram UML Luxe Archive](class_diagram.png)
 
 ## Penjelasan Relasi Antar Kelas
 
@@ -69,7 +69,7 @@ Bukti ini ditampilkan menggunakan `try-except TypeError` agar error dapat ditang
 
 <!-- Masukkan screenshot terminal yang menunjukkan bukti TypeError di sini. -->
 
-![Bukti abstraksi](post-test-pbo-3/images/output_abstraksi.png)
+![Bukti abstraksi](post-test-pbo-3/output_abstraksi.png)
 
 ## Penerapan Polimorfisme
 
@@ -89,7 +89,7 @@ Fungsi `tampilkan_ringkasan(objek)` dapat digunakan untuk memanggil method terse
 
 Operator overloading diterapkan melalui magic method `__str__()` pada kelas `Tas`. Method tersebut menentukan representasi teks objek tas ketika ditampilkan menggunakan `print()`.
 
-![Output inventaris Luxe Archive](post-test-pbo-3/images/output_inventory.png)
+![Output inventaris Luxe Archive](post-test-pbo-3/output_inventory.png)
 
 ## Penerapan Prinsip SOLID (Nilai Plus)
 
