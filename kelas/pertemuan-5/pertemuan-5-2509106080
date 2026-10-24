@@ -1,0 +1,126 @@
+# class Animal:
+
+#     def __init__(self, nama):
+#         self.nama = nama
+
+#     def makan(self):
+#         print(f"{self.nama} sedang makan...")
+
+# class Mamalia(Animal):
+
+#     def __init__(self, nama, warna_bulu):
+#         super().__init__(nama)
+#         self.warna_bulu = warna_bulu
+
+#     def makan(self):
+#         print(f"{self.nama} sedang dan bulunya berwarna{self.warna_bulu}")
+
+# kucing = Mamalia("oren", "oren")
+# kucing.makan()
+
+# class AkunBank:
+
+#     def __init__(self, nama, saldo):
+#         self.nama = nama
+#         self.saldo = saldo
+
+#     def hitung_bunga(self):
+#         return 0
+
+# class Tabungan():
+
+#     def __init__(self, nama, saldo):
+#         self.nama = nama
+#         self.saldo = saldo
+
+#     def hitung_bunga(self):
+#         return self.saldo * 0.02
+        
+# class Deposito():
+
+#     def __init__(self, nama, saldo):
+#         self.nama = nama
+#         self.saldo = saldo
+
+#     def hitung_bunga(self):
+#         return self.saldo * 0.06
+
+# daftar_akun = [Tabungan("eko", 100), Deposito("dapa", 100)]
+
+# for akun in daftar_akun:
+#     print(akun.hitung_bunga())
+
+# from abc import ABC, abstractmethod
+
+# class AkunBank(ABC):
+
+#     # def __init__(self, nama, saldo):
+#     #     self.nama = nama
+#     #     self. saldo = saldo
+
+#     @abstractmethod
+#     def hitung_bunga(self):
+#         pass
+
+# class Tabungan(AkunBank):
+
+#     def hitung_bunga(self):
+#         print("Bunga dari tabungan")
+
+# class Deposito(AkunBank):
+
+#     def hitung_bunga(self):
+#         print("bunga dari deposito")
+
+# daftar_akun = [Tabungan(), Deposito()]
+
+# for akun in daftar_akun:
+#     akun.hitung_bunga()
+
+# class Rekening:
+#     def __init__(self, no_rek, saldo):
+#         self.no_rek = no_rek
+#         self.saldo = saldo
+
+#     def __add__(self, rekening_lain):
+#         total_saldo = self.saldo + rekening_lain.saldo
+#         return f"Total gabungan saldo: Rp {total_saldo:,}"
+
+#     def __gt__(self, rekening_lain):
+#         return self.saldo > rekening_lain.saldo
+
+# class RekeningTabungan:
+
+#     def __add__(self, other):
+#         print("add dari rekening tabungan")
+
+# daftar_akun = [Rekening("0001", 100), RekeningTabungan]
+
+# for akun in daftar_akun:
+#     akun.__add__()
+
+# class Persegi:
+
+#     def hitung_luas(self, sisi):
+#         return sisi * sisi
+
+#     def hitung_luas(self, sisi_one, sisi_two):
+#         return sisi_one * sisi_two
+
+class AkunBank:
+
+    def __init__(self, nama, saldo):
+        self.nama = nama
+        self.saldo = saldo
+
+class Tabungan(AkunBank):
+    def __init__(self, nama, saldo):
+        super().__init__(nama, saldo)
+
+akun_bank = [AkunBank("eko", 100), Tabungan("dapa", 100)]
+
+for akun in akun_bank:
+    if isinstance(akun, AkunBank):
+        print("Ada objek Akun Bank")
+    elif isinstance(akun, Tabungan):
+        print("Ada objek Tabungan")
