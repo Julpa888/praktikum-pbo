@@ -85,7 +85,7 @@ Fungsi `tampilkan_ringkasan(objek)` dapat memanggil method tersebut pada objek d
 
 Operator overloading diterapkan melalui magic method `__str__()` pada kelas `Tas`. Method tersebut menentukan representasi teks objek tas ketika ditampilkan menggunakan `print()`.
 
-## Screenshot Output CRUD
+## Screenshot Output Program
 
 ### 1. Read — Menampilkan Koleksi Tas
 
